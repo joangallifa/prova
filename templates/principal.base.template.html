@@ -1,28 +1,13 @@
-<div style="padding-left: 2%; padding-right: 2%;" ng-controller="appLlistator" class="col-md-12" md-theme={{centre}} md-theme-watch>
-	<div ng-if="$root.mostraLlista" class="container">
-	    <md-toolbar layout="row" class="md-hue-3">
-	      <div class="md-toolbar-tools">
-	        <span>Llistes</span>
+
+<div style="margin-top: 2%;" ng-controller="appPlantilla">
+	<h4>Llistats {{$root.login}}</h4>
+
+	<md-content>
+	  <md-list flex>
+	    <md-list-item ng-repeat="llista in llistatsUsuari">
+	      <div class="md-list-item-text" layout="column">
+	        <p>{{ llista.nom }}</p>
 	      </div>
-	    </md-toolbar>
-
-	    <md-content>
-	      <md-list flex>
-	        <md-list-item ng-repeat="llista in llistatsUsuari" ng-click="donaInformacioLlista(llista)">
-	          <div class="md-list-item-text" layout="column">
-	            <p>{{ llista.nom }}</p>
-	          </div>
-	        </md-list-item>
-	    </md-content>
-  	</div>
-
-  	<div style="margin-top: 2%" ng-if="mostraMissatge">
-  		<p style="text-align: center;">No hi ha cap llista disponible...</p>
-  	</div>
-
-  	<llista ng-if="$root.mostraComponentLlista" 
-  		guid-llista={{guidLlista}}
-  		parametre-mostra-llista='false'>
-  	</llista>
-
+	    </md-list-item>
+	</md-content>
 </div>

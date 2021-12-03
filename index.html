@@ -1,17 +1,15 @@
 <!-- <!DOCTYPE html> -->
-<html lang="es" ng-app="appLlistator">
+<html lang="es" ng-app="appPlantilla">
   <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>LlistesNET</title>
+      <title>PROVA</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
       <link href="http://netdna.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" media="screen">
       <link href="./lib/chart/angular-chart.css" rel="stylesheet" media="screen">
       <!-- <link rel="stylesheet" href="./assets/style.css" media="screen"> -->
       
-	  
-	  
       <link rel="stylesheet" href="./assets/styleComentatorSAC.css" media="screen">
 
       <meta http-equiv="Expires" content="0">
@@ -23,7 +21,7 @@
 
   </head>
   <body style="background-color: white" layout="column">
-    <md-content style="overflow-x: hidden;" ng-if="$root.visible">
+    <md-content style="overflow-x: hidden;">
       <div ng-controller="toolbarCtrl as tool" ng-cloak>
           <md-toolbar class="siip-color-solid-{{$root.centre}} siip-toolbar-ini">
               <div class="md-toolbar-tools">
@@ -38,14 +36,6 @@
       </div>
       <div ui-view></div>
     </md-content>
-
-
-
-
-  
-
-
-
 
 
     <!-- JQuery sempre el primer -->
@@ -79,11 +69,12 @@
 
     <!--  JS del projecte  -->
     <script src="app.js"></script>
-    <script src="./controllers/principal.controller.js "></script>
+    <script src="./controllers/principal.controller.js"></script>
 
     <!-- COMPONENTES -->
-    <script src="./components/llista/llista.controller.js"></script>
-    <script src="./templates/panelSeleccioBancFrases/panel.seleccio.bancFrases.controller.js"></script>
+    <!-- <script src="./components/comentaris/comentaris.controller.js"></script> -->
+    <!-- <script src="./templates/panelSeleccioBancFrases/panel.seleccio.bancFrases.controller.js"></script> -->
+    <!-- <script src="./templates/panelMostraComentari/panel.mostra.comentari.controller.js"></script> -->
 
   </body>
 
