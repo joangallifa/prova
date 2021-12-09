@@ -100,7 +100,6 @@ app.config(function($mdThemingProvider){
 
 app.run(function($http,$rootScope,$cookies,CONFIG){
   $rootScope.visible = true;
-//  var token = '2431F95C-0470-443E-8D63-A9BD36BE915B';
 	var token = $cookies.get('tokenNet');
 
 
@@ -111,7 +110,6 @@ app.run(function($http,$rootScope,$cookies,CONFIG){
   // var urlValidacio = 'http://srv.net.fje.edu/apisiia/conNETctor.php/validatokenCookie/543CE662-E08D-47BF-8404-31D042F98062';
   // var urlValidacio = 'http://srv.net.fje.edu/apisiia/conNETctor.php/validatokenCookie/05DBE228-D629-4BB3-9507-1C6031BA9E4B';
 
- 
  
   $http.get(urlValidacio).success(function(resposta){
       // console.log(resposta)
