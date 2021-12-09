@@ -116,7 +116,7 @@ app.run(function($http,$rootScope,$cookies,CONFIG){
   $http.get(urlValidacio).success(function(resposta){
       // console.log(resposta)
       $rootScope.visible = true;
-      $rootScope.login = 'joan.gallifa' ; //resposta.login;
+      $rootScope.login = resposta.login;
 
 
       switch (resposta.centre) {
