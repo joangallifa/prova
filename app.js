@@ -100,7 +100,10 @@ app.config(function($mdThemingProvider){
 
 app.run(function($http,$rootScope,$cookies,CONFIG){
   $rootScope.visible = true;
-  var token = '2431F95C-0470-443E-8D63-A9BD36BE915B';
+//  var token = '2431F95C-0470-443E-8D63-A9BD36BE915B';
+	var token = $cookies.get('tokenNet');
+
+
   // console.log(token)
   // var token = 'AC72CB4E-9C5C-4760-923F-1BA7EEF1DFA1';
   var urlValidacio = 'https://srv.net.fje.edu/apisiia/conNETctor.php/validatokenCookie/' + token;
