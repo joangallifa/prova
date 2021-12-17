@@ -1,0 +1,23 @@
+  .toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+  .toggle.ios .toggle-handle { border-radius: 20px; }
+  .boton{
+     border-radius: 20px;
+     width: 60px;
+  }
+   .boton1{
+     border-radius: 20px;
+     width: 160px;
+  }
+
+  .boton2{
+     border-radius: 20px;
+     /*width: 60px;*/
+  }
+
+#nouServei { cursor: pointer; cursor: hand; }
+
+.url { cursor: pointer; cursor: hand; }
+
+#nouServei:hover{
+   opacity: 1;
+}

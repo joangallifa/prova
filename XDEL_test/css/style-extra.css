@@ -1,0 +1,53 @@
+.pestana  {
+	float: left;
+	position: relative;
+	height: 25px;
+}
+
+
+.semaforo {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: lightgrey;
+	float: left;
+	margin-right: 6px;
+	color: white;
+	text-align: center;
+	font-size: x-small;
+	padding-top: 2.2px;
+	font-family: Arial;
+	/*margin: 0 auto;*/
+}
+.gris {
+	background: lightgrey;
+}
+.azul{
+	background: blue;
+}
+
+.naranja {
+	background: orange;
+}
+.rojo {
+	background: indianred;
+}
+.verde {
+	background: lightgreen;
+}
+.amarillo {
+	background: yellow;
+}
+.google {
+	background-image: url("../img/google.jpg");
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 6px;
+}
+
+#aad-header {
+  display: none;
+}
