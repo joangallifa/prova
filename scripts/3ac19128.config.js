@@ -4,7 +4,7 @@ angular.module("config", [])
 
 .constant("ENV", "production")
 
-.constant("BASE_API_URL", "https://srv.net.fje.edu/api2")
+.constant("BASE_API_URL", "http://apiaz.net.fje.edu/api")
 
 .constant("LOCALSTORAGE_EXPIRATIONS", [
   {
